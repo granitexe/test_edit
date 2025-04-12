@@ -1,0 +1,52 @@
+:root {
+    --primary: #2e86ab;
+    --secondary: #a2d6f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+[data-editable] {
+    position: relative;
+    transition: outline 0.3s ease;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--secondary);
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
